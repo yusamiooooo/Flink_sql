@@ -12,6 +12,7 @@ public class ClickUtils {
         Class.forName("ru.yandex.clickhouse.ClickHouseDriver");
         String url = "jdbc:clickhouse://192.168.142.130:8123/default";
         connection = DriverManager.getConnection(url);
+
         return connection;
     }
 
@@ -19,3 +20,6 @@ public class ClickUtils {
         connection.close();
     }
 }
+
+
+
